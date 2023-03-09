@@ -16,3 +16,12 @@
 #content {
 display: none;
 }
+
+
+/*** Responsive Design ***/
+@media screen and (max-width: 768px) {
+    .preloader-main .preloader-image img {
+        width: 100%;
+        height: 100%;
+    }
+}
