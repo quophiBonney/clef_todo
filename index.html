@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+	<!-- Include Bootstrap CSS -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<!-- Include Custom CSS -->
+	<link rel="stylesheet" href="assets/css/todo.css">
+</head>
+<body>
+	<!-- Preloader container -->
+    <div class="container-fluid preloader-main" id="preloader">
+        <div class="row justify-content-center">
+            <div class="col-12 preloader-image mt-5">
+			            <div class="">
+                        <img src="assets/images/faq.png" class="img-fluid img-responsive">
+					</div>
+                          <div class="">
+						<img src="assets/images/Jumping letters.gif" class="img-fluid img-responsive">
+					</div>
+                    </div>
+                </div>      
+            </div>
+
+	<!-- Content container -->
+	<div id="content">
+		<h1>Hi there</h1>
+	</div>
+	<!-- Include Bootstrap JS -->
+	<script src="bootstrap/jquery/jquery.slim.min.js"></script>
+	<!-- Include Custom JS -->
+	<script>
+		// Hide the preloader and show the content after 5 seconds
+		window.onload = function() {
+			setTimeout(function() {
+				document.getElementById("preloader").style.display = "none";
+				document.getElementById("content").style.display = "block";
+			}, 5000);
+		}
+	</script>
+</body>
+</html>
