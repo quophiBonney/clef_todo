@@ -23,11 +23,28 @@
             </div>
 
 	<!-- Content container -->
-	<div id="content">
-		<h1>Hi there</h1>
+	<div class="container mt-5" id="content">
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<form>
+				<label for="task">New task:</label>
+				<div class="input-group mb-3">
+					<input type="text" class="form-control py-3" id="task" placeholder="Enter task...">
+					<div class="input-group-append">
+                       <button class="btn btn-primary py-3" type="submit" id="addtodo">Add Todo</button>
+					</div>
+				</div>
+			</form>
+			
+				<!-- List of tasks -->
+				<ul id="taskList" class="list-group mt-4">
+				</ul>
+			</div>
+		</div>
 	</div>
 	<!-- Include Bootstrap JS -->
 	<script src="bootstrap/jquery/jquery.slim.min.js"></script>
+	<script src="bootstrap/js/todo.js"></script>
 	<!-- Include Custom JS -->
 	<script>
 		// Hide the preloader and show the content after 5 seconds
