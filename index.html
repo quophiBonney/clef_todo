@@ -1,36 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Page Title</title>
-	<!-- Include Bootstrap CSS -->
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-	<!-- Include Custom CSS -->
-	<link rel="stylesheet" href="assets/css/todo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disabling Button If Checkbox Not Checked</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
 <body>
+ 
 <div class="container mt-5">
-	<div class="row justify-content-center">
-		<div class="col-md-6">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime quas dicta doloribus dolorum doloremque cupiditate aliquam, quos consequatur eligendi iste earum, rem obcaecati saepe omnis delectus corporis laudantium sapiente itaque minus fuga reprehenderit eos repudiandae soluta! Molestiae, magni libero impedit minima minus quos doloribus assumenda veritatis porro excepturi, iure fugit, aliquam nemo id cupiditate sapiente tenetur nostrum eos mollitia! Atque neque qui fugiat nam velit, debitis quibusdam nulla. Ut itaque blanditiis rem delectus aut possimus tenetur, ipsam ea obcaecati aspernatur provident ipsa omnis voluptatum? Provident blanditiis debitis velit id cupiditate odit recusandae, tempore unde autem dolor, minus magni eligendi.</p>
-		</div>
-		<div class="col-md-6">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime quas dicta doloribus dolorum doloremque cupiditate aliquam, quos consequatur eligendi iste earum, rem obcaecati saepe omnis delectus corporis laudantium sapiente itaque minus fuga reprehenderit eos repudiandae soluta! Molestiae, magni libero impedit minima minus quos doloribus assumenda veritatis porro excepturi, iure fugit, aliquam nemo id cupiditate sapiente tenetur nostrum eos mollitia! Atque neque qui fugiat nam velit, debitis quibusdam nulla. Ut itaque blanditiis rem delectus aut possimus tenetur, ipsam ea obcaecati aspernatur provident ipsa omnis voluptatum? Provident blanditiis debitis velit id cupiditate odit recusandae, tempore unde autem dolor, minus magni eligendi.</p>
-		</div>
-		<div class="col-md-6">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime quas dicta doloribus dolorum doloremque cupiditate aliquam, quos consequatur eligendi iste earum, rem obcaecati saepe omnis delectus corporis laudantium sapiente itaque minus fuga reprehenderit eos repudiandae soluta! Molestiae, magni libero impedit minima minus quos doloribus assumenda veritatis porro excepturi, iure fugit, aliquam nemo id cupiditate sapiente tenetur nostrum eos mollitia! Atque neque qui fugiat nam velit, debitis quibusdam nulla. Ut itaque blanditiis rem delectus aut possimus tenetur, ipsam ea obcaecati aspernatur provident ipsa omnis voluptatum? Provident blanditiis debitis velit id cupiditate odit recusandae, tempore unde autem dolor, minus magni eligendi.</p>
-		</div>
-		<div class="col-md-6">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime quas dicta doloribus dolorum doloremque cupiditate aliquam, quos consequatur eligendi iste earum, rem obcaecati saepe omnis delectus corporis laudantium sapiente itaque minus fuga reprehenderit eos repudiandae soluta! Molestiae, magni libero impedit minima minus quos doloribus assumenda veritatis porro excepturi, iure fugit, aliquam nemo id cupiditate sapiente tenetur nostrum eos mollitia! Atque neque qui fugiat nam velit, debitis quibusdam nulla. Ut itaque blanditiis rem delectus aut possimus tenetur, ipsam ea obcaecati aspernatur provident ipsa omnis voluptatum? Provident blanditiis debitis velit id cupiditate odit recusandae, tempore unde autem dolor, minus magni eligendi.</p>
-			<form>
-				<div class="input-group">
-					<input type="text" placeholder="Enter your search" class="form-control">
-					<div class="input-group-append">
-						<button class="btn btn-primary" type="submit">Add To Cart</button>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
+    <div class="row justify-content-center">
+        <div class="col-md-6 mt-5 card shadow" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="100">
+       <form id="formData">
+        <div class="card-header bg-white">
+          <h2 class="text-center text-primary">👋 Welcome Back</h2>
+        </div>
+          <div class="form-group mt-3">
+            <label>Username<sup class="text-danger">*</sup></label>
+            <input type="text" class="form-control" placeholder="bonney25">
+          </div>
+          <div class="form-group mt-3">
+            <label>Password<sup class="text-danger">*</sup></label>
+            <input type="password" class="form-control" placeholder="Confirm Password">
+             </div>
+       <div class="form-group mb-3 mt-3">
+        <button type="submit" class="btn btn-primary form-control py-3" name="signup">Login</button>
+        <p class="mt-3 text-center">Haven't yet registered?<a class="text-decoration-none" href="signup.html" title="signup">Signup</a></p>
+       </div>
+      
+    </form>
+    </form>
 </div>
+<div class="col-md-6 mt-5 card shadow bg-primary text-center text-light" data-aos="slide-left" data-aos-duration="1000" data-aos-delay="100">
+  <h3 class="mt-5 text-uppercase">We <span class="element"></span> you</h3>
+  <p>You're welcome back to the largest community that has your interest at heart and wil do everything possible to see you winning in all your endeavours.</p>
+  <a title="facebook" href="" class="text-light"><i class="fa fa-facebook"></i></a>
+</div>
+</div>
+</div>
+<script src="assets/js/custom.js"></script>
+<script src="bootstrap/jquery/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="bootstrap/jquery/sweetalert.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script>
+  AOS.init();
+  var typed = new Typed('.element', {
+  strings: ["cherish", "love", "like"],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop: true
+});
+
+</script>
 </body>
 </html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disabling Button If Checkbox Not Checked</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+<body>
+ 
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 mt-5 card shadow" data-aos="slide-right" data-aos-duration="1000" data-aos-delay="100">
+            <form id="formData">
+                <div class="card-header bg-white">
+                  <h2 class="text-center text-primary">Complete Your Registration</h2>
+                </div>
+                <div class="d-flex space">
+                <div class="form-group mt-3">
+                  <label>Full Name<sup class="text-danger">*</sup></label>
+                  <input type="text" class="form-control" placeholder="Solomon Bonney">
+                </div>
+                  <div class="form-group mt-3">
+                    <label>Username<sup class="text-danger">*</sup></label>
+                    <input type="text" class="form-control" placeholder="bonney25">
+                  </div>
+                </div>
+                <div class="d-flex space">
+                  <div class="form-group mt-3">
+                    <label>Your Interest<sup class="text-danger">*</sup></label>
+                       <select class="form-control" name="continent">
+                        <option disabled selected>Your interest</option>
+                        <option value="frontend">Frontend Development(Web)</option>
+                        <option value="backend">Backend Development(Web)</option>
+                        <option value="android">Android Development</option>
+                        <option value="ios">IOS Development</option>
+                        <option value="mobile-app">Mobile App Development</option>
+                       </select>
+                    </select>
+                  </div>
+                  <div class="form-group mt-3">
+                    <label>Continent<sup class="text-danger">*</sup></label>
+                       <select class="form-control" name="continent">
+                        <option disabled selected>--Choose your continent--</option>
+                        <option value="africa">Africa</option>
+                        <option value="asia">Asia</option>
+                        <option value="">Europe</option>
+                        <option value="">South America</option>
+                       </select>
+                    </select>
+                  </div>
+                  </div>
+                  <div class="d-flex space">
+                  <div class="form-group mt-3">
+                    <label>Password<sup class="text-danger">*</sup></label>
+                    <input type="password" class="form-control" placeholder="Confirm Password">
+                     </div>
+           <div class="form-group mt-3">
+            <label>Password<sup class="text-danger">*</sup></label>
+            <input type="password" class="form-control" placeholder="Confirm Password">
+             </div>
+             </div>
+             <div class="justify-content-center">
+             <div class="form-group mt-3 text-center">
+                <input type="checkbox" id="check"> By checking you agree with our rules, regulations and policies governing our platform.
+                 </div>
+                </div>
+               <div class="form-group mb-3 mt-3">
+                <button type="submit" class="btn btn-primary form-control py-3 signup" disabled="true" id="signup">Signup</button>
+                <p class="mt-3 text-center">Already a member?<a class="text-decoration-none" href="index.html" title="login">Login</a></p>
+               </div>
+</div>
+<div class="col-md-6 mt-5 card shadow bg-primary text-center text-light" data-aos="slide-left" data-aos-duration="1000" data-aos-delay="100">
+  <h3 class="mt-5 text-uppercase">Yours is to <span class="element"></span></h3>
+  <p>Joining this platform gives you the upper hand and advantage to fast-track your coding and development journey and also groom you to be professional.</p>
+  <a title="facebook" href="" class="text-light"><i class="fa fa-facebook"></i></a>
+</div>
+</div>
+</div>
+<script src="assets/js/custom.js"></script>
+<script src="bootstrap/jquery/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="bootstrap/jquery/sweetalert.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script>
+  AOS.init();
+  var typed = new Typed('.element', {
+  strings: ["follow", "subscribe", "like", "share"],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop: true
+});
+
+</script>
+</body>
+</html>
